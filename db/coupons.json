@@ -7,15 +7,28 @@
         "successes": 1,
         "failures": 0,
         "status": "active",
-        "verified": "2026-01-09"
+        "verified": "2026-01-08"
       },
       {
-        "code": "SAVE0",
-        "description": "10% off",
+        "code": "JUSTDOIT20",
+        "description": "20% off",
+        "successes": 2,
+        "failures": 0,
+        "status": "active",
+        "verified": "2026-01-07"
+      }
+    ],
+    "bestCode": "JUSTDOIT20"
+  },
+  "adidas.com": {
+    "coupons": [
+      {
+        "code": "ADIDAS15",
+        "description": "15% off",
         "successes": 1,
         "failures": 0,
         "status": "active",
-        "verified": "2026-01-09"
+        "verified": "2026-01-07"
       }
     ],
     "bestCode": null
