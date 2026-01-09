@@ -16,6 +16,14 @@
         "failures": 0,
         "status": "active",
         "verified": "2026-01-07"
+      },
+      {
+        "code": "SAVE0",
+        "description": "10% off",
+        "successes": 1,
+        "failures": 0,
+        "status": "active",
+        "verified": "2026-01-09"
       }
     ],
     "bestCode": "JUSTDOIT20"
