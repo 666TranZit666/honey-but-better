@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 300px;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.brand-card {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.brand-card:hover {
+  transform: translateY(-2px);
+  background: #334155;
+}
+
+.codes {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#code-list {
+  list-style: none;
+  padding: 0;
+}
+
+#code-list li {
+  background: #1e293b;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
