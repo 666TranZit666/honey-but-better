@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.brand-card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.brand-card:hover {
+  transform: translateY(-4px);
+  background: #334155;
+}
+
+.codes {
+  padding: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+#code-list {
+  list-style: none;
+  padding: 0;
+}
+
+#code-list li {
+  background: #1e293b;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-size: 1rem;
+  cursor: pointer;
+}
