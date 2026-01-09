@@ -29,6 +29,14 @@
         "failures": 0,
         "status": "active",
         "verified": "2026-01-07"
+      },
+      {
+        "code": "idk",
+        "description": "20% off",
+        "successes": 2,
+        "failures": 5,
+        "status": "active",
+        "verified": "2026-01-07"
       }
     ],
     "bestCode": null
