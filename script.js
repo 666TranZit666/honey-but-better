@@ -13,22 +13,23 @@ fetch("./db/coupons.json")
 
 // Build brand cards
 function buildBrands() {
-  // Object.keys(db) gives ["nike.com", "adidas.com", ...]
-  const brands = Object.keys(db).sort();
-  const container = document.getElementById("brands");
-  container.innerHTML = "";
+  const brandsContainer = document.getElementById("brands");
+  brandsContainer.innerHTML = "";
 
-  brands.forEach(domain => {
-    const brandName = domain.split(".")[0].toUpperCase(); // "nike.com" -> "NIKE"
+  // db keys are domains like "nike.com"
+  const domains = Object.keys(db).sort();
+
+  domains.forEach(domain => {
+    const brandName = domain.split(".")[0].toUpperCase(); // e.g., "nike.com" -> "NIKE"
     const card = document.createElement("div");
     card.className = "brand-card";
     card.innerHTML = `<h2>${brandName}</h2>`;
     card.onclick = () => showCodes(domain);
-    container.appendChild(card);
+    brandsContainer.appendChild(card);
   });
 }
 
-// Show codes for a selected domain
+// Show codes for a specific domain
 function showCodes(domain) {
   document.getElementById("brands").classList.add("hidden");
   document.getElementById("codes").classList.remove("hidden");
@@ -40,7 +41,10 @@ function showCodes(domain) {
   list.innerHTML = "";
 
   // Get the array of coupons for this domain
-  const coupons = db[domain].coupons.sort((a, b) => b.successes - a.successes);
+  const coupons = db[domain].coupons;
+
+  // Sort by successes descending
+  coupons.sort((a, b) => b.successes - a.successes);
 
   coupons.forEach(c => {
     const li = document.createElement("li");
