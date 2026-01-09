@@ -40,5 +40,21 @@
       }
     ],
     "bestCode": null
+  },
+  "newchef.com": {
+    "coupons": [
+      {
+        "code": "SAVE10",
+        "type": "percentage",
+        "value": 10,
+        "minSpend": 0,
+        "applicableItems": [],
+        "successes": 1,
+        "failures": 0,
+        "status": "active",
+        "verified": "2026-01-09"
+      }
+    ],
+    "bestCode": "SAVE10"
   }
 }
