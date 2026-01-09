@@ -1,1 +1,15 @@
-{}
+{
+  "nike.com": {
+    "coupons": [
+      {
+        "code": "SAVE10",
+        "description": "10% off",
+        "successes": 1,
+        "failures": 0,
+        "status": "active",
+        "verified": "2026-01-09"
+      }
+    ],
+    "bestCode": null
+  }
+}
